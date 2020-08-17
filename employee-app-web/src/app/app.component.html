@@ -5,7 +5,6 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Nombre</th>
         <th scope="col">Función</th>
         <th scope="col">¿Qué quieres hacer?</th>
@@ -13,7 +12,6 @@
       </thead>
       <tbody>
       <tr *ngFor="let employee of this.employees; index as i">
-        <td>{{ employee.id }}</td>
         <td>{{ employee.fullName }}</td>
         <td>{{ employee.functionEmployee }}</td>
         <td> <button class="btn btn-sm btn-outline-primary mr-2"  (click)="updateEmployee(employee); open(content)"> Modificar</button>
